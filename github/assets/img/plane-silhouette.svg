@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" fill="none" aria-hidden="true">
+  <g opacity="0.9">
+    <path d="M40 250 L640 250 L760 200 L820 210 L780 255 L820 300 L760 305 L640 260 L40 260 Z"
+          fill="url(#fuselage)" stroke="#3a3a38" stroke-width="1.5"/>
+    <path d="M300 250 L180 90 L245 90 L400 245 Z" fill="url(#wing)" stroke="#3a3a38" stroke-width="1.5"/>
+    <path d="M330 260 L230 400 L290 400 L410 262 Z" fill="url(#wing)" stroke="#3a3a38" stroke-width="1.5"/>
+    <path d="M700 210 L760 150 L790 155 L755 212 Z" fill="url(#wing)" stroke="#3a3a38" stroke-width="1.2"/>
+    <ellipse cx="150" cy="255" rx="22" ry="10" fill="#0d0d0d" stroke="#3a3a38"/>
+    <g stroke="#4a4a47" stroke-width="1" opacity="0.6">
+      <line x1="230" y1="250" x2="230" y2="260"/>
+      <line x1="290" y1="250" x2="290" y2="260"/>
+      <line x1="350" y1="250" x2="350" y2="260"/>
+      <line x1="410" y1="250" x2="410" y2="260"/>
+      <line x1="470" y1="250" x2="470" y2="260"/>
+      <line x1="530" y1="250" x2="530" y2="260"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="fuselage" x1="40" y1="200" x2="820" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2c2c2a"/>
+      <stop offset="1" stop-color="#161615"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="180" y1="90" x2="410" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242422"/>
+      <stop offset="1" stop-color="#141413"/>
+    </linearGradient>
+  </defs>
+</svg>
