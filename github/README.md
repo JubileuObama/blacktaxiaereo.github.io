@@ -24,9 +24,11 @@ frota.html            Frota (Citation, King Air, Seneca)
 depoimentos.html      Depoimentos e cases (nova seção, separada de notícias)
 noticias.html         Notícias (estado vazio pronto para receber posts)
 fale-conosco.html     Contato: telefones, endereço, mapa e formulário
-css/style.css         Design system (cores, tipografia, componentes)
-js/main.js            Menu mobile, contadores animados, formulários
-assets/img/           Ilustração do avião (SVG) usada no hero
+css/style.css         Design system (cores, tipografia, componentes, animações)
+js/main.js            Menu mobile, contadores animados, scroll-reveal, parallax, formulários
+assets/img/fotos/     Fotos reais da BLACK (hangar, frota, sala VIP) usadas nos heroes e seções
+design-references.md  Pesquisa de referências (VistaJet, Pilatus, Platoon, Gulfstream, NetJets)
+                       e o plano de implementação combinado com você
 ```
 
 ## O que foi corrigido em relação ao site atual
@@ -46,15 +48,41 @@ assets/img/           Ilustração do avião (SVG) usada no hero
 - Copyright fixo em "©2023" — agora o ano no rodapé é gerado
   automaticamente pelo JavaScript.
 
+## Atualização visual (set/2026)
+
+A segunda versão trocou os placeholders por fotos reais e adicionou o
+dinamismo pedido, com base nas referências pesquisadas em
+`design-references.md` (estrutura inspirada na VistaJet, comportamento de
+scroll da Pilatus/Platoon, acabamento visual da Gulfstream):
+
+- **Fotos reais**: heroes de todas as páginas, a composição "foto dupla"
+  assimétrica (`.photo-duo`) nas seções split, o card do jato na Frota e a
+  galeria de 3 fotos da Sala VIP no FBO usam as fotos em
+  `assets/img/fotos/`, selecionadas do material que você enviou. King Air
+  e Seneca continuam com ícone (marcados "em breve na frota") por não
+  termos foto real ainda.
+- **Scroll-reveal**: cards, fotos e seções aparecem com fade + leve
+  deslocamento ao entrar na tela (`js/main.js`, classes `.reveal-init` /
+  `.is-visible`), com pequeno atraso escalonado entre elementos vizinhos.
+- **Parallax**: a faixa de números (`.stats-band`) tem uma foto do hangar
+  em segundo plano que se move em velocidade diferente do scroll.
+- **Micro-interações**: cards, fotos da frota e depoimentos reagem ao
+  hover com leve elevação e brilho dourado.
+- **Logo oficial**: o cabeçalho e o rodapé agora usam a marca oficial
+  (`assets/img/black-logo.png`, extraída do material de identidade visual
+  em alta resolução), no lugar da aproximação em CSS da primeira versão.
+  O "Táxi Aéreo" em dourado continua como texto separado abaixo da marca.
+- **Paleta mais suave**: o preto quase puro (`#0a0a0a`) das versões
+  anteriores foi substituído por um cinza-chumbo (`#232326` e variações)
+  em todo o site — mesma sensação premium, com menos peso visual.
+- Todo `prefers-reduced-motion` é respeitado — quem pede menos animação no
+  sistema operacional não vê o parallax nem as transições de scroll.
+
 ## O que você ainda precisa preencher
 
 Tudo abaixo foi deixado como espaço reservado, pronto para receber conteúdo
 real sem precisar mexer em código:
 
-- **Fotos**: os quadros com ícone (`.media-frame`) no lugar das fotos do
-  hangar, aeronaves e FBO devem ser substituídos por fotos reais — troque
-  o `<div class="media-frame">...</div>` por uma tag `<img>` apontando
-  para o arquivo em `assets/img/`.
 - **Depoimentos** (`depoimentos.html` e a prévia na home): troque os
   textos de exemplo por depoimentos reais de clientes, com nome e empresa.
 - **Empty Leg** (`empty-leg.html`): quando houver rotas disponíveis,

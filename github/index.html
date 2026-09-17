@@ -7,7 +7,7 @@
 <meta name="description" content="A bordo com você, por você. Fretamento de aeronaves executivas, FBO no Aeroporto da Pampulha e voos Empty Leg com a BLACK Táxi Aéreo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27%230a0a0a%27/%3E%3Ctext x=%2750%27 y=%2766%27 font-family=%27Georgia,serif%27 font-style=%27italic%27 font-size=%2760%27 fill=%27%23b7995f%27 text-anchor=%27middle%27%3EB%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,7 +15,7 @@
 
 <header class="site-header">
   <nav class="nav container">
-    <a href="index.html" class="logo">BLACK<small>Táxi Aéreo</small></a>
+    <a href="index.html" class="logo"><img src="assets/img/black-logo.png" alt="BLACK" class="logo-img"><span class="logo-sub">Táxi Aéreo</span></a>
     <ul class="nav-links">
       <li><a href="fretamento.html">Fretamento</a></li>
       <li><a href="fbo.html">FBO</a></li>
@@ -45,12 +45,11 @@
 
 <main>
 
-  <section class="hero">
-    <img src="assets/img/plane-silhouette.svg" class="hero-plane" alt="">
+  <section class="hero hero-photo" style="background-image:url('assets/img/fotos/hero-jato-noite.jpg')">
     <div class="hero-inner container">
       <p class="eyebrow">Aviação executiva · Belo Horizonte</p>
-      <h1 class="hero-tag">A bordo <span class="accent">com você</span><br>A bordo <span class="accent">por você</span></h1>
-      <p class="hero-sub">Fretamento, FBO e Empty Leg com atendimento pessoal, segurança e eficiência em cada rota — do primeiro contato ao pouso.</p>
+      <h1>A bordo <span class="accent">com você</span><br>a bordo <span class="accent">por você</span></h1>
+      <p class="hero-sub max-560">Fretamento, FBO e Empty Leg com atendimento pessoal, segurança e eficiência em cada rota — do primeiro contato ao pouso.</p>
       <div class="hero-actions">
         <a href="fale-conosco.html" class="btn btn-solid">Solicitar cotação</a>
         <a href="https://wa.me/553141416681" class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
@@ -87,23 +86,72 @@
   <section>
     <div class="container">
       <div class="grid-3">
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
-          <h3>FBO</h3>
-          <p>Mais que aeronaves, atendemos pessoas. O melhor FBO do Aeroporto da Pampulha (SBBH), com embarque e desembarque diferenciados.</p>
-          <a href="fbo.html" class="btn btn-ghost">Conhecer o FBO</a>
+        <div class="card card-photo">
+          <div class="card-photo-media">
+            <img src="assets/img/fotos/jato-nariz-por-do-sol.jpg" alt="Jato da BLACK ao pôr do sol, pronto para embarque" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Fretamento</h3>
+            <p>Homologada e autorizada pela ANAC, a BLACK leva você com segurança e eficiência até onde precisa chegar.</p>
+            <a href="fretamento.html" class="btn btn-ghost">Ver fretamento</a>
+          </div>
         </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 16l20-6-6 6 6 6-20-6zm0 0l7 0"/></svg>
-          <h3>Fretamento</h3>
-          <p>Homologada e autorizada pela ANAC, a BLACK leva você com segurança e eficiência até onde precisa chegar.</p>
-          <a href="fretamento.html" class="btn btn-ghost">Ver fretamento</a>
+        <div class="card card-photo">
+          <div class="card-photo-media">
+            <img src="assets/img/fotos/sala-vip-aberta.jpg" alt="Sala VIP do FBO da BLACK no Aeroporto da Pampulha" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>FBO</h3>
+            <p>Mais que aeronaves, atendemos pessoas. O melhor FBO do Aeroporto da Pampulha (SBBH), com embarque e desembarque diferenciados.</p>
+            <a href="fbo.html" class="btn btn-ghost">Conhecer o FBO</a>
+          </div>
         </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
-          <h3>Empty Leg</h3>
-          <p>Assentos ou voos completos com valores abaixo do fretamento tradicional, aproveitando pernas vazias da nossa frota.</p>
-          <a href="empty-leg.html" class="btn btn-ghost">Ver oportunidades</a>
+        <div class="card card-photo">
+          <div class="card-photo-media">
+            <img src="assets/img/fotos/patio-aereo.jpg" alt="Aeronaves da BLACK no pátio do Aeroporto da Pampulha" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Empty Leg</h3>
+            <p>Assentos ou voos completos com valores abaixo do fretamento tradicional, aproveitando pernas vazias da nossa frota.</p>
+            <a href="empty-leg.html" class="btn btn-ghost">Ver oportunidades</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars-band">
+    <div class="pillars-bg" style="background-image:url('assets/img/padronagem.png')"></div>
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow" style="justify-content:center">Nossos valores</p>
+        <h2>O que guia cada voo</h2>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <h4>Segurança</h4>
+          <p>Nunca abrimos mão dela — mesmo que isso signifique atrasar um voo ou trocar de aeronave.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <h4>Agilidade</h4>
+          <p>Da cotação ao embarque, resolvemos rápido — seu tempo importa tanto quanto o nosso.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <h4>Transparência</h4>
+          <p>Preço, rota e aeronave claros desde a primeira conversa, sem letras miúdas.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">04</span>
+          <h4>Credibilidade</h4>
+          <p>Operação homologada pela ANAC e clientes que voltam a voar com a gente.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">05</span>
+          <h4>Profissionalismo</h4>
+          <p>Equipe treinada para tratar cada detalhe do voo — e de quem está a bordo — com seriedade.</p>
         </div>
       </div>
     </div>
@@ -111,8 +159,9 @@
 
   <section>
     <div class="container split">
-      <div class="media-frame">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-7h6v7"/></svg>
+      <div class="photo-duo">
+        <img src="assets/img/fotos/patio-aereo.jpg" alt="Pátio de aeronaves da BLACK vista do ar, no Aeroporto da Pampulha" class="photo-main" loading="lazy">
+        <img src="assets/img/fotos/turbina-detalhe.jpg" alt="Detalhe da turbina de uma aeronave da frota BLACK" class="photo-accent" loading="lazy">
       </div>
       <div>
         <p class="eyebrow">Nossa frota</p>
@@ -124,6 +173,7 @@
   </section>
 
   <section class="stats-band">
+    <div class="stats-bg" style="background-image:url('assets/img/fotos/hangar-entardecer.jpg')"></div>
     <div class="container">
       <div class="stats-headline">
         <h2 class="num"><span data-count="19">0</span> MIL</h2>
@@ -184,7 +234,7 @@
 <footer class="site-footer">
   <div class="container footer-top">
     <div class="footer-about">
-      <a href="index.html" class="logo">BLACK<small>Táxi Aéreo</small></a>
+      <a href="index.html" class="logo"><img src="assets/img/black-logo.png" alt="BLACK" class="logo-img"><span class="logo-sub">Táxi Aéreo</span></a>
       <p style="margin-top:18px">A BLACK Táxi Aéreo S/A atua em fretamento, FBO e compra/venda de aeronaves — sempre priorizando segurança, eficiência e o respeito à vida humana acima de qualquer objetivo comercial.</p>
     </div>
     <div>
